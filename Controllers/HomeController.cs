@@ -25,7 +25,7 @@ namespace StocksApp.Controllers
             
             Stock stock = new Stock
             {
-                StockSymbol = _options.Value.DefaultStockSymbol,
+                StockSymbol = stockSymbol,
                 CompanyName = stockProfile["name"].ToString(),
                 CurrentPrice = Convert.ToDouble(stockQuote["c"].ToString()),
                 LowestPrice = Convert.ToDouble(stockQuote["l"].ToString()),
